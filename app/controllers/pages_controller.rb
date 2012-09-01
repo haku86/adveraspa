@@ -14,6 +14,6 @@ class PagesController < ApplicationController
   def water
   end
 
-  def contact
+  def location
   end
 end

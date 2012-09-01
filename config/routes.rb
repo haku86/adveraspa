@@ -1,15 +1,15 @@
 Adveraspa::Application.routes.draw do
-  get "pages/home"
+  root to: "pages#home"
 
-  get "pages/about"
+  match "/about", to: 'pages#about'
 
-  get "pages/exfoliation"
+  match "/exfoliation", to: "pages#exfoliation"
 
-  get "pages/wrap"
+  match "/wrap", to: "pages#wrap"
 
-  get "pages/water"
+  match "/water", to: "pages#water"
 
-  get "pages/contact"
+  match "/location", to: "pages#location"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

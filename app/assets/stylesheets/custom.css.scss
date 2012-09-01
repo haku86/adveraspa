@@ -2,6 +2,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
+@media (min-width: 1200px) {
+  .span12, .container {
+    width: 1170px;
+  }
+}
+
+
 /* universal */
 
 html {
@@ -9,7 +16,8 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 0px;
+  background: #c3c3c3;
 }
 
 section {
@@ -29,6 +37,7 @@ textarea {
 }
 
 
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,8 +54,7 @@ h1 {
 h2 {
   font-size: 1.7em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 15px;
   font-weight: normal;
   color: #999;
 }
@@ -56,22 +64,63 @@ p {
   line-height: 1.7em;
 }
 
+.courgette{
+  font-family: 'Courgette', cursive;
+  font-weight: normal;
+}
 
 
-
+/*Body*/
+.wrapper{
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+	background: #ffffff;
+}
 
 /* Header */
+header{
+	background: #ffffff;
+	border-bottom: 2px solid #c8c8c8;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	position: relative;
+	z-index: 9999;
+}
 
-.navbar-inner{
-    background: url('/assets/woodTextureBg.png') !important;
-	height: 60px;
+header nav{
+	margin-right: 30px;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li{
+	list-style: none;
+	float: left;
+}
+
+header nav ul li a{
+	height: 67px;
+	line-height: 67px;
+	padding: 0 15px;
+	border-top: 4px solid #ffffff;
+	text-decoration: none;
+	color: #777777;
+	display: block;
+	font-weight: bold;
+}
+
+header nav ul li a:hover{
+	color: #5dcfca;
+	border-top: 4px solid #5dcfca;
+	text-decoration: none;
 }
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -80,6 +129,127 @@ p {
 }
 
 #logo:hover {
-  color: #fff;
+  color: #000;
   text-decoration: none;
+}
+
+/* Footer */
+footer{
+	background: #ffffff;
+	border-top: 2px solid #c8c8c8;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	overflow: auto;
+	padding: 20px 0;
+}
+
+.footer span{
+  float: left;
+  margin-left: 30px;
+  padding: 5px 0;
+}
+
+.footer nav{
+  float: right;
+  margin-right: 30px;
+}
+
+.footer ul{
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li{
+  float: left;
+}
+
+.footer ul li a{
+  text-indent: -9999px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 3px 8px;
+}
+
+.footer .facebook{
+  background: url('facebook.png')
+}
+
+.footer .twitter{
+  background: url('twitter.png')
+}
+
+.footer .wordpress{
+  background: url('wordpress.png')
+}
+
+/* landing page */
+#myCarousel{
+	margin-bottom: 0;
+}
+
+.landing .row .span12{
+	position: relative;
+}
+
+.tagline{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 400px;
+}
+
+.tagline p{
+	color: #ffffff;
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Services */
+.service{
+	background: #ffffff;
+}
+
+.service > .row > .span12 h1{
+	margin-top: 30px;
+	color: #50BCB6;
+}
+
+.service > .row > .span12 p{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.service .row .span12{
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+.service .row .span12 > div{
+	padding: 30px;
+	overflow: auto;
+	background: #f2f2f2;
+}
+
+.service .row .span12 div div{
+	margin-left: 30px;
+	display: inline-block;
+}
+
+.service .span12 div h2{
+	font-size: 2.5em;
+	color: #EE4256;
+}
+
+.service .span12 div span{
+	margin-bottom: 30px;
+	font-size: 1.75em;
+	color: #5a5a5a;
+	display: block;
+}
+
+.service .span12 div p{
+	font-size: 1.25em;
 }
