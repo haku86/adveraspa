@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Adveraspa</title>
+  <title>Advera Spa</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<%= link_to "Advera Spa", '#', id: "logo" %>
+				<nav>
+					<ul class="nav pull-right">
+						<li><%= link_to "Exfoliation", '#' %></li>
+						<li><%= link_to "Wrap", '#' %></li>
+						<li><%= link_to "Water", '#' %></li>
+						<li><%= link_to "About", '#' %></li>			
+						<li><%= link_to "Contact", '#' %></li>						
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<%= yield %>
+	</div>
 
 </body>
 </html>

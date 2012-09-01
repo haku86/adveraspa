@@ -1,4 +1,16 @@
 Adveraspa::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/about"
+
+  get "pages/exfoliation"
+
+  get "pages/wrap"
+
+  get "pages/water"
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
