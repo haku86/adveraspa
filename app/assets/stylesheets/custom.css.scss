@@ -17,7 +17,7 @@ html {
 
 body {
   padding-top: 0px;
-  background: #c3c3c3;
+  background: #f5e2d0;
 }
 
 section {
@@ -80,7 +80,7 @@ p {
 header{
 	background: #ffffff;
 	border-bottom: 2px solid #c8c8c8;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 	position: relative;
 	z-index: 9999;
 }
@@ -128,7 +128,7 @@ header nav ul li a:hover{
 footer{
 	background: #ffffff;
 	border-top: 2px solid #c8c8c8;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 	overflow: auto;
 	padding: 20px 0;
 }
